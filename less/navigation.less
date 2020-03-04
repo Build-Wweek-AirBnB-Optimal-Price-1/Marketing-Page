@@ -2,15 +2,22 @@
 
 nav {
     width: 100%;
-    .flex_fast();
+    .flex_fast(space-around, center);
     flex-direction: row;
     font-family: @main-font;
     height: 150px;
     margin-bottom: 0;
-    background-color: @nav-background;
-
-    h1 {
-        font-size: 4rem;
+    background-color: @theme-color;
+    @media @tablet {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        height: 210px;
+        .logo {
+            .flex_fast();
+            width: 100%;
+            padding-bottom: 0px;
+        }
     }
 
     .links{
@@ -19,8 +26,17 @@ nav {
         
         a {
             text-decoration: none;
-            color: black;
-            font-size: 1.5rem;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media @tablet {
+            width: 100%;
+            .flex_fast(space-around, center);
         }
 
         @media @phone {

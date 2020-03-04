@@ -1,0 +1,64 @@
+
+.about-header {
+    .flex_fast();
+    flex-direction: column;
+    margin: 20px 0;
+
+    h2 {
+        margin: 10px;
+    }
+    
+    p {
+        text-indent: 40px;
+    }
+}
+
+.profile-section {
+
+    .flex_fast(space-around, center);
+    flex-wrap: wrap;
+
+    .profile-card {
+        .flex_fast(space-around, center);
+        flex-direction: column;
+        width: 30%;
+        padding: 5px;
+        border: 4px solid @button-background;
+        border-radius: 10px;
+        margin: 4% 0;
+        height: 400px;
+        background-color: @theme-color;
+        color: @card-text-color;
+        @media @tablet {
+            width: 45%;
+            height: 500px;
+        }
+        @media @phone {
+            width: 90%;
+            height: 580px;
+        }
+        h2 {
+            color: @card-text-color;
+            height: 80px;
+            padding: 5px 0 5px;
+        }
+        img {
+            width: 97%;
+            border: 2px solid @card-text-color;
+        }
+        p {
+            margin: 2px;
+            font-size: 2rem;
+            
+        }
+        a {
+           color: @card-text-color;
+           font-size: 1.5rem; 
+           text-decoration: none;
+           button {
+               width: 100%;
+           }
+
+        }
+    }
+}
