@@ -135,7 +135,7 @@ html {
 }
 html,
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', "sans-serif";
   color: #767676;
 }
 h1,
@@ -143,20 +143,20 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', "sans-serif";
   color: #767676;
 }
 h2 {
   font-size: 3.2rem;
   text-align: center;
 }
-h3 {
-  font-size: 2.8rem;
+a {
+  font-family: 'Raleway', "sans-serif";
 }
 p {
   font-size: 1.6rem;
   line-height: 1.4;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', "sans-serif";
 }
 .wrapper {
   max-width: 840px;
@@ -195,13 +195,16 @@ address {
 nav {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
-  font-family: "sans-serif";
-  height: 150px;
+  font-family: 'Raleway', "sans-serif";
+  height: 80px;
   margin-bottom: 0;
   background-color: #767676;
+}
+nav .logo {
+  margin-left: 20px;
 }
 @media (max-width: 800px) {
   nav {
@@ -220,14 +223,15 @@ nav {
 }
 nav .links {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   width: 50%;
 }
 nav .links a {
   text-decoration: none;
   color: white;
-  font-size: 2.5rem;
+  font-size: 1.3rem;
+  margin: 0 20px;
 }
 nav .links a:hover {
   text-decoration: underline;
@@ -235,15 +239,7 @@ nav .links a:hover {
 @media (max-width: 800px) {
   nav .links {
     width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-}
-@media (max-width: 500px) {
-  nav .links {
-    width: 100%;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
 footer {
