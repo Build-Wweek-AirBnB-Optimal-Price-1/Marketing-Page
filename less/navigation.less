@@ -2,12 +2,15 @@
 
 nav {
     width: 100%;
-    .flex_fast(space-around, center);
+    .flex_fast(space-between, center);
     flex-direction: row;
     font-family: @main-font;
-    height: 150px;
+    height: 80px;
     margin-bottom: 0;
     background-color: @theme-color;
+    .logo {
+        margin-left: 20px;
+    }
     @media @tablet {
         flex-direction: column;
         justify-content: flex-start;
@@ -21,13 +24,14 @@ nav {
     }
 
     .links{
-        .flex_fast(space-between, center);
+        .flex_fast(flex-end, center);
         width: 50%;
         
         a {
             text-decoration: none;
             color: white;
-            font-size: 2.5rem;
+            font-size: 1.3rem;
+            margin: 0 20px;
         }
 
         a:hover {
@@ -36,12 +40,7 @@ nav {
 
         @media @tablet {
             width: 100%;
-            .flex_fast(space-around, center);
-        }
-
-        @media @phone {
-            width: 100%;
-            justify-content: space-around;
+            justify-content: center;
         }
     }
 }
