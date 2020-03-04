@@ -1,0 +1,23 @@
+.flex_fast(@justify:center, @align:center){
+    display: flex;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.make_button(@width: 150px, @back-color: @button-background){
+    .flex_fast();
+    background-color: @back-color;
+    color: white;
+    width: @width;
+    height: 35px;
+    font-size: 1.6rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: white;
+        color: @back-color;
+        border-color: @back-color;
+    }
+}

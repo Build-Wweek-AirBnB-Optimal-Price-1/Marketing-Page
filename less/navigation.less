@@ -1,0 +1,47 @@
+// Nav
+
+nav {
+    width: 100%;
+    .flex_fast(space-around, center);
+    flex-direction: row;
+    font-family: @main-font;
+    height: 150px;
+    margin-bottom: 0;
+    background-color: @theme-color;
+    @media @tablet {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-content: center;
+        height: 210px;
+        .logo {
+            .flex_fast();
+            width: 100%;
+            padding-bottom: 0px;
+        }
+    }
+
+    .links{
+        .flex_fast(space-between, center);
+        width: 50%;
+        
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 2.5rem;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media @tablet {
+            width: 100%;
+            .flex_fast(space-around, center);
+        }
+
+        @media @phone {
+            width: 100%;
+            justify-content: space-around;
+        }
+    }
+}
