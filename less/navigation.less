@@ -10,16 +10,20 @@ nav {
     background-color: @theme-color;
     .logo {
         margin-left: 20px;
+        width: 200px;
     }
+    position: fixed;
+    top: 0;
     @media @tablet {
         flex-direction: column;
         justify-content: flex-start;
         align-content: center;
-        height: 210px;
+        height: 115px;
         .logo {
             .flex_fast();
-            width: 100%;
-            padding-bottom: 0px;
+            width: 200px;
+            margin: -15px 0 -20px;
+            
         }
     }
 
