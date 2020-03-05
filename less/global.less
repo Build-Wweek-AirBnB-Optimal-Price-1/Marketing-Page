@@ -1,20 +1,11 @@
 // General Styles
 * {
     box-sizing: border-box;
-    font-family: 'Raleway', sans-serif;
     // border: 1px solid black;
   }
   
   html {
     font-size: 62.5%;
-  }
-  
-  html, body {
-    font-family: @main-font;
-    color: @theme-color;
-  }
-  
-  h1, h2, h3, h4, h5 {
     font-family: @main-font;
     color: @theme-color;
   }
@@ -23,15 +14,16 @@
     font-size: 3.2rem;
     text-align: center;
   }
-  
-  a {
-    font-family: @main-font;
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
   }
   
   p {
     font-size: 1.6rem;
     line-height: 1.4;
-    font-family: @main-font;
   }
   
   .wrapper {
@@ -39,6 +31,10 @@
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
+    margin-top: @nav-height-desktop;
+    @media @tablet {
+      margin-top: @nav-height-tablet;
+    }
   }
 
   button {
